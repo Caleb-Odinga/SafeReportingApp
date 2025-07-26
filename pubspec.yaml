@@ -1,0 +1,74 @@
+name: safe_reporting
+description: A secure anonymous reporting application
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core: ^3.1.0
+  firebase_auth: ^5.1.0
+  cloud_firestore: ^5.0.0
+  firebase_storage: ^12.0.0
+  firebase_messaging: ^15.0.0
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # UI Components
+  smooth_page_indicator: ^1.1.0
+  
+  # Utilities
+  shared_preferences: ^2.2.2
+  uuid: ^4.2.1
+  intl: ^0.20.2
+  path: ^1.8.3
+  
+  # Security & Encryption
+  flutter_secure_storage: ^9.0.0
+  crypto: ^3.0.3
+  encrypt: ^5.0.1
+  
+  # File & Media Handling
+  image_picker: ^1.0.5
+  file_picker: ^6.1.1
+  flutter_image_compress: ^2.1.0
+  video_compress: ^3.1.2
+  
+  # Notifications
+  flutter_local_notifications: ^16.3.2
+
+  # Location Services
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  permission_handler: ^11.2.0
+  
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/i18n/
+  
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: fonts/Roboto-Regular.ttf
+  #       - asset: fonts/Roboto-Bold.ttf
+  #         weight: 700
